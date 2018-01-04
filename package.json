@@ -28,6 +28,7 @@
   "homepage": "https://github.com/Astro36/KoreanDictionary#readme",
   "dependencies": {
     "jsdom": "^11.5.1",
+    "parallel-tasks": "file:../ParallelTasks",
     "request": "^2.83.0",
     "sqlite3": "^3.1.13"
   },
