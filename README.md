@@ -2,6 +2,26 @@
 
 > Provides Korean Dictionary Implements and Dictionary Crawler
 
+[![npm](https://img.shields.io/npm/v/korean-dictionary.svg?style=flat-square)](https://www.npmjs.com/package/korean-dictionary) [![npm](https://img.shields.io/npm/dt/korean-dictionary.svg?style=flat-square)](https://www.npmjs.com/package/korean-dictionary)
+
+## ChangeLog
+
+See [CHANGELOG](./CHANGELOG.md)
+
+## Installation
+
+- Install with npm:
+
+```bash
+npm install korean-dictionary --save
+```
+
+- Clone the repo:
+
+```bash
+git clone https://github.com/Astro36/KoreanDictionary.git
+```
+
 ## License
 
 ```text
