@@ -1,0 +1,12 @@
+[package]
+name = "korean_dictionary"
+version = "0.2.0"
+authors = ["Seungjae Park <astr36@naver.com>"]
+publish = false
+
+[lib]
+crate-type=["dylib"]
+
+[dependencies]
+kodict = "0.1.1"
+libc = "0.2.43"

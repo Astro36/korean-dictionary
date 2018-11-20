@@ -1,20 +1,51 @@
-/* KoreanDictionary
-Copyright (C) 2017  Astro
+const assert = require('assert');
+const path = require('path');
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU Lesser General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+const { Dictionary, DictionaryItem } = require('../lib');
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Lesser General Public License for more details.
+describe('Dictionary', () => {
+  const dictionary = Dictionary.createFromFile(path.join(__dirname, './dictionary.tsv'));
 
-You should have received a copy of the GNU Lesser General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>. */
+  describe('.createFromFile()', () => {
+    it('사전 TSV 파일을 읽어 Dictionary를 생성합니다.', () => {
+      assert(dictionary instanceof Dictionary);
+    });
+  });
 
-const { KoreanDictionary } = require('../lib');
+  describe('.createFromWeb()', () => {
+    it('웹에서 표준국어대사전을 크롤링해 Dictionary를 생성합니다.', () => {
+      assert(typeof Dictionary.createFromWeb === 'function');
+    });
+  });
 
-const dictionary = new KoreanDictionary('dictionary.sqlite3');
-dictionary.fetch();
+  describe('#find()', () => {
+    it('사전에 해당 단어가 있는지 확인하고 해당 단어를 반환합니다.', () => {
+      assert(dictionary.find('사과') instanceof DictionaryItem);
+    });
+  });
+
+  describe('#findAll()', () => {
+    it('사전에 해당 단어가 있는지 확인하고 해당하는 모든 단어를 반환합니다.', () => {
+      assert(Array.isArray(dictionary.findAll('사과')));
+    });
+  });
+
+  describe('#has()', () => {
+    it('사전에 해당 단어가 있는지 확인합니다.', () => {
+      assert(dictionary.has('사과'));
+      assert(!dictionary.has('배추'));
+    });
+  });
+
+  describe('#saveAsTsv()', () => {
+    it('사전을 TSV 파일로 저장합니다.', () => {
+      assert(typeof dictionary.saveAsTsv === 'function');
+    });
+  });
+
+  describe('#size()', () => {
+    it('사전에 포함된 단어 개수를 반환합니다.', () => {
+      assert(typeof dictionary.size() === 'number');
+    });
+  });
+});
