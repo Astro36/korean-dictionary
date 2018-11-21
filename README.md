@@ -1,6 +1,6 @@
 # KoreanDictionary
 
-> Provides Korean Dictionary Implements and Dictionary Crawler
+> Provides Korean Dictionary Implements and Dictionary Crawler for Node.js with Rust FFI
 
 [![npm](https://img.shields.io/npm/v/korean-dictionary.svg?style=for-the-badge)](https://www.npmjs.com/package/korean-dictionary) [![npm](https://img.shields.io/npm/dt/korean-dictionary.svg?style=for-the-badge)](https://www.npmjs.com/package/korean-dictionary)
 
@@ -31,6 +31,12 @@ Then you run below command to compile the program.
 ```bash
 cargo build --release
 ```
+
+## Usage
+
+### API Documentation
+
+See [API](https://astro36.github.io/KoreanDictionary/api/index.html)
 
 ## License
 
