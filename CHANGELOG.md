@@ -6,7 +6,7 @@ Released Nov 21, 2018
 
 ## Changed
 
-- 
+- Remove all code and rewrite it with Rust FFI.
 
 ## v0.1.0
 
