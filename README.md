@@ -36,7 +36,17 @@ cargo build --release
 
 ### API Documentation
 
-See [API](https://astro36.github.io/KoreanDictionary/api/index.html)
+See [API](https://astro36.github.io/KoreanDictionary/index.html)
+
+### Example
+
+Crawl [National Institute of Korean Language](http://www.korean.go.kr/) [Korean Dictionary](http://stdweb2.korean.go.kr/main.jsp) in parallel using 16 threads, and save it as [TSV](https://en.wikipedia.org/wiki/Tab-separated_values) file.
+
+```javascript
+const { Dictionary } = require('korean-dictionary');
+const dictionary = Dictionary.createFromWeb(16);
+dictionary.saveAsTsv('./dictionary.tsv');
+```
 
 ## License
 

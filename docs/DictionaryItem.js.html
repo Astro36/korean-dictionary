@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: DictionaryItem.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,48 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: DictionaryItem.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Class representing a dictionary item.
+ */
+class DictionaryItem {
+  constructor({
+    word, meaning, pos, category,
+  }) {
+    /**
+     * 표제어
+     * @member {string}
+     */
+    this.word = word;
+    /**
+     * 뜻
+     * @member {string}
+     */
+    this.meaning = meaning;
+    /**
+     * 품사
+     * @member {Array.&lt;string>}
+     */
+    this.pos = pos;
+    /** 전문어 및 특수어휘
+     * @member {Array.&lt;string>}
+     */
+    this.category = category;
+  }
+}
 
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+module.exports = DictionaryItem;
+</code></pre>
+        </article>
+    </section>
 
 
 
