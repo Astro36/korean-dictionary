@@ -1,4 +1,4 @@
-# KoreanDictionary
+# Korean Dictionary
 
 > Provides Korean Dictionary Implements and Dictionary Crawler for Node.js with Rust FFI
 
