@@ -19,7 +19,7 @@ npm install korean-dictionary --save
 - Clone the repo:
 
 ```bash
-git clone https://github.com/Astro36/KoreanDictionary.git
+git clone https://github.com/Astro36/korean-dictionary.git
 ```
 
 ## Requirement
@@ -36,7 +36,7 @@ cargo build --release
 
 ### API Documentation
 
-See [API](https://astro36.github.io/KoreanDictionary/index.html)
+See [API](https://astro36.github.io/korean-dictionary/index.html)
 
 ### Example
 
