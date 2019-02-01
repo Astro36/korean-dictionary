@@ -1,7 +1,7 @@
 {
   "name": "korean-dictionary",
-  "version": "0.2.0",
-  "description": "Provides Korean Dictionary Implements and Crawler for Node.js with Rust FFI",
+  "version": "0.3.0",
+  "description": "Korean Dictionary Manager for Node.js with Rust FFI",
   "main": "lib/index.js",
   "keywords": [
     "korean",
@@ -14,12 +14,12 @@
     "test": "test"
   },
   "dependencies": {
-    "ffi": "^2.2.0"
+    "ffi": "^2.3.0"
   },
   "devDependencies": {
-    "eslint": "^5.9.0",
+    "eslint": "^5.12.1",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-import": "^2.16.0",
     "jsdoc": "^3.5.5",
     "mocha": "^5.2.0"
   },

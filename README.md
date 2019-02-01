@@ -1,12 +1,18 @@
 # Korean Dictionary
 
-> Provides Korean Dictionary Implements and Dictionary Crawler for Node.js with Rust FFI
+> Korean Dictionary Manager for Node.js with Rust FFI
 
 [![npm](https://img.shields.io/npm/v/korean-dictionary.svg?style=for-the-badge)](https://www.npmjs.com/package/korean-dictionary) [![npm](https://img.shields.io/npm/dt/korean-dictionary.svg?style=for-the-badge)](https://www.npmjs.com/package/korean-dictionary)
 
 ## ChangeLog
 
 See [CHANGELOG](./CHANGELOG.md)
+
+## Features
+
+- Crawl words from the online dictionary.
+- Find the given word from a dictionary.
+- Read and write a dictionary file.
 
 ## Installation
 
@@ -29,7 +35,7 @@ To use this program, you need to install [Rust](https://www.rust-lang.org/).
 Then you run below command to compile the program.
 
 ```bash
-cargo build --release
+RUSTFLAGS='-C target-cpu=native' cargo build --release
 ```
 
 ## Usage
@@ -51,7 +57,7 @@ dictionary.saveAsTsv('./dictionary.tsv');
 ## License
 
 ```text
-Copyright (c) 2018 Seungjae Park
+Copyright (c) 2019 Seungjae Park
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
