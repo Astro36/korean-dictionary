@@ -31,12 +31,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Astro36/KoreanDictionary.git"
+    "url": "git+https://github.com/Astro36/korean-dictionary.git"
   },
-  "author": "Seungjae Park <astr36@naver.com>",
+  "author": "Seungjae Park <astro.psj@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Astro36/KoreanDictionary/issues"
+    "url": "https://github.com/Astro36/korean-dictionary/issues"
   },
-  "homepage": "https://github.com/Astro36/KoreanDictionary#readme"
+  "homepage": "https://github.com/Astro36/korean-dictionary#readme"
 }
