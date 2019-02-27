@@ -1,7 +1,7 @@
 [package]
 name = "korean_dictionary"
 version = "0.3.0"
-authors = ["Seungjae Park <astr36@naver.com>"]
+authors = ["Seungjae Park <astro.psj@gmail.com>"]
 edition = "2018"
 publish = false
 
